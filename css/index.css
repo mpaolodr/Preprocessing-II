@@ -371,6 +371,7 @@ header .navigation nav a {
   width: 80%;
   padding: 5%;
   background-color: #17a2b8;
+  min-width: 130px;
   font-size: 1.6rem;
   border-radius: 10px;
   color: #ffebcd;
