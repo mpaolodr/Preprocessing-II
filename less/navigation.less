@@ -1,21 +1,25 @@
 // Navigation Styles here
+
 header {
-  border: 2px solid black;
+  border: 2px solid green;
   margin-bottom: 0;
+  border-bottom: 2px dashed @navigation-border;
+  .displayFlex(center, center);
 
   .navigation {
     border: 2px solid black;
-    .displayFlex(center, center);
-    border-bottom: 2px dashed @silver;
+    max-width: 800px;
+    width: 100%;
+    .displayFlex(space-between, center);
 
     .logo-container {
       border: 1px solid black;
-      width: 40%;
+      width: 30%;
     } //logo-container ends here
 
     nav {
       border: 1px solid black;
-      width: 40%;
+      width: 50%;
       .displayFlex(space-between, center);
 
       a {
@@ -25,36 +29,4 @@ header {
       }
     } //nav ends here
   } //navigation closes here
-
-  .header-content {
-    border: 2px solid black;
-    .displayFlex(space-between, center);
-    flex-direction: column;
-
-    figure {
-      border: 2px solid black;
-      width: 80%;
-      margin-bottom: 2%;
-
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    } //figure ends here
-
-    .introduction {
-      border: 2px solid black;
-      width: 80%;
-      border-bottom: 2px dashed @silver;
-
-      h2 {
-        font-size: 2.7rem;
-      }
-
-      p {
-        font-size: 1.5rem;
-        margin-bottom: 2%;
-      }
-    }
-  } //header-content ends here
 } //header closes here
