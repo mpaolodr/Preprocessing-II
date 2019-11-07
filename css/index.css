@@ -165,16 +165,15 @@ img {
 }
 .container {
   max-width: 800px;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
   .container {
-    max-width: 450px;
+    width: 80%;
   }
 }
 header {
-  border: 2px solid green;
   margin-bottom: 0;
   border-bottom: 2px dashed #c0c0c0;
   display: flex;
@@ -182,9 +181,8 @@ header {
   align-items: center;
 }
 header .navigation {
-  border: 2px solid black;
   max-width: 800px;
-  width: 100%;
+  width: 75%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -197,8 +195,7 @@ header .navigation {
   }
 }
 header .navigation .logo-container {
-  border: 1px solid black;
-  width: 30%;
+  width: 40%;
 }
 @media (max-width: 500px) {
   header .navigation .logo-container {
@@ -208,7 +205,6 @@ header .navigation .logo-container {
   }
 }
 header .navigation nav {
-  border: 1px solid black;
   width: 50%;
   display: flex;
   justify-content: space-between;
@@ -220,12 +216,14 @@ header .navigation nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 2%;
   }
 }
 header .navigation nav a {
   font-size: 1.5rem;
   color: #212529;
   font-weight: 700;
+  text-decoration: none;
 }
 .footer {
   width: 100%;
@@ -238,11 +236,7 @@ header .navigation nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home .header-content {
-  border: 2px solid black;
-}
 .home .header-content figure {
-  border: 2px solid black;
   margin-bottom: 2%;
 }
 .home .header-content figure img {
@@ -250,7 +244,6 @@ header .navigation nav a {
   height: 100%;
 }
 .home .header-content .introduction {
-  border: 2px solid black;
   border-bottom: 2px dashed #c0c0c0;
 }
 .home .header-content .introduction h2 {
@@ -266,32 +259,76 @@ header .navigation nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #c0c0c0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    padding-left: 0;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    padding-right: 0;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -302,15 +339,33 @@ header .navigation nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .destination .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
 }
 .home .content-pick .destination .btn button {
   width: 80%;
@@ -319,4 +374,9 @@ header .navigation nav a {
   font-size: 1.6rem;
   border-radius: 10px;
   color: #ffebcd;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn button {
+    padding: 2%;
+  }
 }

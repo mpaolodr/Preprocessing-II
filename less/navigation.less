@@ -1,15 +1,13 @@
 // Navigation Styles here
 
 header {
-  border: 2px solid green;
   margin-bottom: 0;
   border-bottom: 2px dashed @navigation-border;
   .displayFlex(center, center);
 
   .navigation {
-    border: 2px solid black;
     max-width: 800px;
-    width: 100%;
+    width: 75%;
     .displayFlex(space-between, center);
 
     //media queries
@@ -20,8 +18,7 @@ header {
     }
 
     .logo-container {
-      border: 1px solid black;
-      width: 30%;
+      width: 40%;
 
       @media @mobile {
         width: 60%;
@@ -31,19 +28,20 @@ header {
     } //logo-container ends here
 
     nav {
-      border: 1px solid black;
       width: 50%;
       .displayFlex(space-between, center);
 
       @media @mobile {
         width: 100%;
         .displayFlex(space-evenly, center);
+        margin-bottom: 2%;
       }
 
       a {
         font-size: 1.5rem;
         color: @font-color;
         font-weight: 700;
+        text-decoration: none;
       }
     } //nav ends here
   } //navigation closes here
