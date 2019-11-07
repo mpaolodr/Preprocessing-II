@@ -195,6 +195,7 @@ header .navigation {
   }
 }
 header .navigation .logo-container {
+  min-width: 150px;
   width: 40%;
 }
 @media (max-width: 500px) {
@@ -209,6 +210,7 @@ header .navigation nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 250px;
 }
 @media (max-width: 500px) {
   header .navigation nav {
