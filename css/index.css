@@ -339,7 +339,8 @@ header .navigation nav a {
   padding-top: 30px;
   border-top: 2px dashed #c0c0c0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .home .content-pick {
@@ -352,6 +353,7 @@ header .navigation nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
@@ -362,24 +364,72 @@ header .navigation nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-}
-@media (max-width: 500px) {
-  .home .content-pick .destination .btn {
-    width: 100%;
-  }
+  width: 100%;
 }
 .home .content-pick .destination .btn button {
   width: 80%;
-  padding: 5%;
+  padding: 2%;
   background-color: #17a2b8;
   min-width: 130px;
   font-size: 1.6rem;
   border-radius: 10px;
   color: #ffebcd;
 }
-@media (max-width: 500px) {
-  .home .content-pick .destination .btn button {
-    padding: 2%;
-  }
+.home .form {
+  border-top: 2px dashed #c0c0c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.home .form form {
+  min-width: 250px;
+  width: 50%;
+  background-color: #ffebcd;
+  border-radius: 10px;
+  padding: 2%;
+}
+.home .form table {
+  width: 100%;
+}
+.home .form table tr {
+  margin-bottom: 10%;
+}
+.home .form table td {
+  width: 50%;
+  vertical-align: middle;
+}
+.home .form table td label {
+  font-size: 1.5rem;
+  color: #212529;
+  font-weight: 600;
+}
+.home .form table td input {
+  margin: 5% 0;
+  max-width: 500px;
+  width: 100%;
+  padding: 2%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #c0c0c0;
+}
+.home .form table .submit-btn {
+  text-align: center;
+  padding: 5%;
+}
+.home .form table .submit-btn button {
+  width: 40%;
+  padding: 1%;
+  background-color: #17a2b8;
+  min-width: 130px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  color: #ffebcd;
+  font-weight: 600;
+}
+.home .form table textarea {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
 }
