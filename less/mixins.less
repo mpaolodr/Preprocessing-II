@@ -1,1 +1,17 @@
 // Mixins in here
+
+.displayFlex(@main, @cross) {
+  display: flex;
+  justify-content: @main;
+  align-items: @cross;
+}
+
+.cta-btn(@width, @padding) {
+  width: @width;
+  padding: @padding;
+  background-color: @button-bg;
+  min-width: 130px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  color: @sandy-beach;
+}
