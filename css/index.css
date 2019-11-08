@@ -376,26 +376,27 @@ header .navigation nav a {
   color: #ffebcd;
 }
 .home .form {
-  border: 2px solid black;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5%;
 }
 .home .form form {
-  border: 5px solid green;
+  min-width: 250px;
   width: 50%;
+  background-color: #ffebcd;
+  border-radius: 10px;
+  padding: 2%;
 }
 .home .form table {
   width: 100%;
-  border: 5px solid red;
 }
 .home .form table tr {
   margin-bottom: 10%;
-  border: 2px solid blue;
 }
 .home .form table td {
-  width: 100%;
+  width: 50%;
   vertical-align: middle;
 }
 .home .form table td label {
@@ -405,13 +406,14 @@ header .navigation nav a {
 }
 .home .form table td input {
   margin: 5% 0;
+  max-width: 500px;
+  width: 100%;
   padding: 2%;
   border-radius: 5px;
   outline: none;
   border: 1px solid #c0c0c0;
 }
 .home .form table .submit-btn {
-  border: 2px solid orange;
   text-align: center;
   padding: 5%;
 }
@@ -423,6 +425,7 @@ header .navigation nav a {
   font-size: 1.6rem;
   border-radius: 10px;
   color: #ffebcd;
+  font-weight: 600;
 }
 .home .form table textarea {
   width: 100%;

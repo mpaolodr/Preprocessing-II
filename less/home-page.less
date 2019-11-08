@@ -134,26 +134,27 @@
   } // content-pick
 
   .form {
-    border: 2px solid black;
+    border-top: 2px dashed @navigation-border;
     .displayFlex(center, center);
     padding: 5%;
 
     form {
-      border: 5px solid green;
+      min-width: 250px;
       width: 50%;
+      background-color: @footer-bg;
+      border-radius: 10px;
+      padding: 2%;
     }
 
     table {
       width: 100%;
-      border: 5px solid red;
 
       tr {
         margin-bottom: 10%;
-        border: 2px solid blue;
       }
 
       td {
-        width: 100%;
+        width: 50%;
         vertical-align: middle;
 
         label {
@@ -164,6 +165,8 @@
 
         input {
           margin: 5% 0;
+          max-width: 500px;
+          width: 100%;
           padding: 2%;
           border-radius: 5px;
           outline: none;
@@ -172,12 +175,12 @@
       }
 
       .submit-btn {
-        border: 2px solid orange;
         text-align: center;
         padding: 5%;
 
         button {
           .cta-btn(40%, 1%);
+          font-weight: 600;
         }
       }
       textarea {
